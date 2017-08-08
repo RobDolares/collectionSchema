@@ -1,0 +1,30 @@
+<h1>List Stickers</h1>
+
+
+<table>
+  <thead>
+    <th>
+      Description
+    </th>
+    <th colspan="3">
+      Dimensions
+    </th>
+    <th>
+      Quantity
+    </th>
+  </thead>
+  {{#stickers}}
+  <tbody>
+    <tr>
+      <td><a href="/stickerForm?id={{_id}}">{{description}}</a></td>
+      <td>{{dimensions}}</td>
+      <td>{{dimensions}}</td>
+      <td>{{dimensions}}</td>
+
+      <td>{{quantity}}</td>
+      <td><a href="/deleteSticker/?id={{_id}}">Delete</a></td>
+    </tr>
+  </tbody>
+  {{/stickers}}
+
+</table>
