@@ -1,0 +1,3 @@
+{"_id":{"$oid":"5988cf85fc0219417066d3d3"},"description":"tiy donut","quantity":300,"__v":0,"dimensions":["3","3","round"]}
+{"_id":{"$oid":"5988cfe0fc0219417066d3d4"},"description":"Rock Shox","quantity":22,"__v":0,"dimensions":["4","4","square"]}
+{"_id":{"$oid":"598902382601254269cae656"},"description":"shopbot","quantity":3,"__v":0}
