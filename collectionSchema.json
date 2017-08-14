@@ -1,3 +1,6 @@
-{"_id":{"$oid":"5988cf85fc0219417066d3d3"},"description":"tiy donut","quantity":300,"__v":0,"dimensions":["3","3","round"]}
-{"_id":{"$oid":"5988cfe0fc0219417066d3d4"},"description":"Rock Shox","quantity":22,"__v":0,"dimensions":["4","4","square"]}
-{"_id":{"$oid":"598902382601254269cae656"},"description":"shopbot","quantity":3,"__v":0}
+{"_id":{"$oid":"5991b8ca1c11c92b32ba31d9"},"description":"something else","quantity":123123,"dimensions":{"height":2,"width":3,"shape":"circle"},"__v":0}
+{"_id":{"$oid":"5991bddf1c11c92b32ba31da"},"description":"Crank Arm Brewery","quantity":1,"dimensions":{"height":3,"width":3,"shape":"Circle"},"__v":0}
+{"_id":{"$oid":"5991bdfa1c11c92b32ba31db"},"description":"Specialized","quantity":145,"dimensions":{"height":4,"width":1,"shape":"Cursive Type"},"__v":0}
+{"_id":{"$oid":"5991be141c11c92b32ba31dc"},"description":"TIY Donut","quantity":9,"dimensions":{"height":2,"width":2,"shape":"Circle"},"__v":0}
+{"_id":{"$oid":"5991daa489a4ff2d28357144"},"description":"tes","quantity":1,"dimensions":{"height":11,"width":11,"shape":"circle"},"__v":0}
+{"_id":{"$oid":"5991ddc289a4ff2d28357145"},"description":"Peanuts","quantity":45,"dimensions":{"height":40,"width":20,"shape":"rectangle"},"__v":0}

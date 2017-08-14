@@ -11,6 +11,9 @@ routes.get('/', (req, res) => {
     .catch(err => res.send('there was an error'));
 });
 
+
+//***** Add New Sticker *****//
+
 routes.get('/stickerForm', (req, res) => {
   if (req.query.id) {
     Sticker.findById(req.query.id)
@@ -41,6 +44,44 @@ routes.post('/saveSticker', (req, res) => {
           });
       }
     });
+
+
+//***** Edit Sticker *****//
+
+routes.get('/editSticker', (req, res) => {
+  if (req.query.id) {
+    Sticker.findById(req.query.id)
+      // render form with this sticker
+      .then(stickers => res.render('editSticker', { stickers: stickers }));
+  } else {
+    res.render('stickerForm');
+  }
+});
+
+routes.post('/saveSticker', (req, res) => {
+
+    if (req.body.id) {
+        Sticker.findByIdAndUpdate(req.body.id, req.body, { upsert: true })
+          .then(() => res.redirect('/'))
+      } else {
+        new Sticker(req.body)
+          .save()
+          // then redirect to the homepage
+          .then(() => res.redirect('/'))
+          // catch validation errors
+          .catch(err => {
+            console.log(err.errors);
+            res.render('stickerForm', {
+              errors: err.errors,
+              stickers: req.body
+            });
+          });
+      }
+    });
+
+
+
+//***** Delete Sticker *****//
 
 routes.get('/deleteSticker', (req, res) => {
   Sticker.findById(req.query.id)

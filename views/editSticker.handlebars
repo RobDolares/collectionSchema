@@ -1,17 +1,17 @@
-<h1>sticker Form</h1>
-
 <form action="/saveSticker" method="post">
+
   <label for="description">Description</label>
-  <input type="text" id="description" name="description" value="{{sticker.description}}" />
+  <input type="text" id="description" name="description" value="{{stickers.description}}" />
   <div class="fieldError">{{errors.description.message}}</div>
   <br />
 
   <label for="dimensions">Dimensions</label>
-  <input type="number" id="height" name="dimensions.height" value="{{sticker.dimensions.height}}" placeholder="width"/>
-  <input type="number" id="width" name="dimensions.width" value="{{sticker.dimensions.width}}" placeholder="height"/>
-  <input type="text" id="shape" name="dimensions.shape" value="{{sticker.dimensions.shape}}" placeholder="shape"/>
-  <div class="fieldError">{{errors.sticker.dimensions.message}}</div>
+  <input type="number" id="height" name="dimensions.height" value="{{stickers.dimensions.height}}" />
+  <input type="number" id="width" name="dimensions.width" value="{{stickers.dimensions.width}}" />
+  <input type="text" id="shape" name="dimensions.shape" value="{{stickers.dimensions.shape}}" />
+  <div class="fieldError">{{errors.stickers.dimensions.message}}</div>
   <br />
+
   <label for="quantity">Quantity</label>
   <input type="number" id="quantity" name="quantity" value="{{stickers.quantity}}" />
   <div class="fieldError">{{errors.quantity.message}}</div>

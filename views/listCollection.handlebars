@@ -18,11 +18,12 @@
   {{#stickers}}
   <tbody>
     <tr>
-      <td><a href="/stickerForm?id={{_id}}">{{description}}</a></td>
+      <td>{{description}}</td>
       <td>{{dimensions.height}}"</td>
       <td>{{dimensions.width}}"</td>
       <td>{{dimensions.shape}}</td>
       <td>{{quantity}}</td>
+      <td><a href="/editSticker/?id={{_id}}">Edit</a></td>
       <td><a href="/deleteSticker/?id={{_id}}">Delete</a></td>
     </tr>
   </tbody>
