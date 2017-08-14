@@ -7,14 +7,14 @@
   <br />
 
   <label for="dimensions">Dimensions</label>
-  <input type="number" id="width" name="dimensions" value="{{dimensions.width}}" placeholder="width"/>
-  <input type="number" id="height" name="dimensions" value="{{dimensions.height}}" placeholder="height"/>
-  <input type="text" id="shape" name="dimensions" value="{{dimensions.shape}}" placeholder="shape"/>
-  <div class="fieldError">{{errors.dimensions.message}}</div>
+  <input type="number" id="height" name="dimensions.height" value="{{sticker.dimensions.height}}" placeholder="width"/>
+  <input type="number" id="width" name="dimensions.width" value="{{sticker.dimensions.width}}" placeholder="height"/>
+  <input type="text" id="shape" name="dimensions.shape" value="{{sticker.dimensions.shape}}" placeholder="shape"/>
+  <div class="fieldError">{{errors.sticker.dimensions.message}}</div>
   <br />
 
   <label for="quantity">Quantity</label>
-  <input type="number" id="quantity" name="quantity" value="{{sticker.quantity}}" />
+  <input type="number" id="quantity" name="quantity" value="{{stickers.quantity}}" />
   <div class="fieldError">{{errors.quantity.message}}</div>
   <br />
 

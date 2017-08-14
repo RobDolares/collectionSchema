@@ -30,4 +30,4 @@ mongoose
   .connect('mongodb://localhost:27017/stickers', { useMongoClient: true })
   // now we can do whatever we want with mongoose.
   // configure session support middleware with express-session
-  .then(() => app.listen(3000, () => console.log('successfully started app')));
+  .then(() => app.listen(3002, () => console.log('successfully started app')));

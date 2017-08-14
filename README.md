@@ -7,4 +7,4 @@ An array
 At least one nested object (can be in array)
 
 Access:
-mongoimport --db stickers --collection collections --out collectionSchema.json
+mongoimport --db stickers --collection collections collectionSchema.json

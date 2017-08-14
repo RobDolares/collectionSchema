@@ -23,15 +23,6 @@ routes.get('/stickerForm', (req, res) => {
 
 routes.post('/saveSticker', (req, res) => {
 
-    // .then(() => res.redirect('/'))
-    // // catch validation errors
-    // .catch(err => {
-    //   console.log(err);
-    //   res.render('stickerForm', {
-    //     errors: err.errors,
-    //     stickers: req.body
-    //   });
-    // });
     if (req.body.id) {
         Sticker.findByIdAndUpdate(req.body.id, req.body, { upsert: true })
           .then(() => res.redirect('/'))

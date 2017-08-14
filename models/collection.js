@@ -10,8 +10,8 @@ const Schema = mongoose.Schema;
 const collectionSchema = new Schema({
   description: { type: String, required: true },
   dimensions: {
-    width: {type:Number, required: false},
-    height: {type:Number, required: false},
+    height: {type: Number, required: false},
+    width: {type: Number, required: false},
     shape: {type: String, required: false}
 },
   quantity: { type: Number, required: true},
